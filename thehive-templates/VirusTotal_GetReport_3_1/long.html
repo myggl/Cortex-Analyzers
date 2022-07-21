@@ -123,7 +123,7 @@
             <div ng-repeat="result in content.attributes.crowdsourced_yara_results">
                 <div class="row" style="margin-bottom: 1em">
                     <div class="text-center col-md-1">
-                        <i class="fa fa-exclamation-triangle" style="color: #ffa940"></i>
+                        <i class="fa far fa-exclamation-triangle" style="color: #ffa940"></i>
                     </div>
                     <div class="col-md-11">
                         Matches rule <span style="color: #ffa940">{{result.rule_name}}</span> by
@@ -135,7 +135,7 @@
                         <span style="color: #666666">
                             <div class="row" style="margin-bottom: 1em">
                                 <div class="text-center col-md-1" style="width:0%; padding-right:0.5%">
-                                    <i class="fa fa-info-circle"></i>
+                                    <i class="fa far fa-info-circle"></i>
                                 </div>
                                 <div class="col-md-11">
                                     {{result.description}}
@@ -172,7 +172,7 @@
             <div ng-repeat="result in content.attributes.crowdsourced_ids_results">
                 <div class="row" style="margin-bottom: 1em">
                     <div class="text-center col-md-1">
-                        <i class="fa fa-exclamation-triangle mt-auto mb-auto"
+                        <i class="fa far fa-exclamation-triangle mt-auto mb-auto"
                            ng-class="result.alert_severity == 'high' ? 'text-danger' : (scanner.category == 'medium' ? 'text-warning' : (scanner.category == 'low' ? 'text-success' : 'text-info' ))">
                         </i>
                     </div>
@@ -187,7 +187,7 @@
                         <span style="color: #666666">
                             <div class="row" style="margin-bottom: 1em">
                                 <div class="text-center col-md-1" style="width:0%; padding-right:0.5%">
-                                <i class="fa fa-info-circle"></i>
+                                <i class="fa far fa-info-circle"></i>
                                 </div>
                                 <div class="col-md-11">
                                     <strong>Category: </strong>{{result.rule_category}}
@@ -527,7 +527,7 @@
                     </td>
                     <td>
                         <i
-                                ng-class="scanner.category == 'malicious' ? 'text-danger fas fa-bug' : (scanner.category == 'suspicious' ? 'text-warning fas fa-bug' : (scanner.category == 'harmless' ? 'text-success fas fa-check-circle' : 'text-info fas fa-question-circle' ))"
+                                ng-class="scanner.category == 'malicious' ? 'text-danger fa fa-bug' : (scanner.category == 'suspicious' ? 'text-warning fa fa-bug' : (scanner.category == 'harmless' ? 'text-success fa fa-check-circle' : 'text-info fa fa-question-circle' ))"
                         >
                         </i>
                     </td>
